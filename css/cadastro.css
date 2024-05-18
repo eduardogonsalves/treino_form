@@ -1,0 +1,125 @@
+/* SoliDeoGloria */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+html, body {
+    height: 100%;
+    }
+
+body {
+    color: rgb(73, 72, 72);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/treino_form/imagens/login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    }
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    }
+
+.corpo{
+    width: 400px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding-top: 50px;
+
+    
+    }
+
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    position: relative;
+    }
+
+input {
+    margin-left: 50px;
+    width: 75%;
+    margin-bottom: 10px;
+    padding: 8px; /* Aumenta o espaçamento interno dos campos */
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    /*width: 100%;/* Torna os campos mais largos */
+    /*box-sizing: border-box; /* Inclui padding e border na largura total */
+    }
+
+
+input::placeholder {
+    color: red;
+    opacity: 0.7;
+    font-style: italic;
+    }
+
+input:invalid {
+    border: 2px solid red;
+    background-color: #fdd;
+    }
+
+input:valid {
+    border: 2px solid green;
+    background-color: #dfd;
+    }
+
+input:required {
+    border: 2px dashed blue;
+    }
+
+input:required:invalid {
+    border: 2px solid red;
+    background-color: #fdd;
+    }
+
+input:required:valid {
+    border: 2px solid green;
+    background-color: #dfd;
+    }
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    }
+
+button.botao {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    padding: 10px;
+    justify-content:center;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    }
+
+button.botao:hover {
+    background-color: #45a049;
+    }
+
+.info-icon{
+    cursor: pointer;
+    margin-left: 5px;
+    color: #dd1b1b;
+    font-size: 1em;
+    }
